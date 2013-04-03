@@ -1,5 +1,5 @@
 /* ===========================================================
- * bootstrap-tooltip.js v2.3.0
+ * bootstrap-tooltip.js v2.3.1
  * http://twitter.github.com/bootstrap/javascript.html#tooltips
  * Inspired by the original jQuery.tipsy by Jason Frame
  * ===========================================================
@@ -80,13 +80,14 @@
     }
 
   , enter: function (e) {
-    if ( this.prevTarget && this.prevTarget !== e.currentTarget ) {
-        $( this.prevTarget )[this.type]( this._options ).data( this.type ).hide()
+      if (this.prevTarget && this.prevTarget !== e.currentTarget) {
+        $(this.prevTarget)[this.type](this._options).data(this.type).hide()
       }
       this.prevTarget = e.currentTarget
 
-      var self = $( e.currentTarget )[this.type]( this._options ).data( this.type )
+      var self = $(e.currentTarget)[this.type](this._options).data(this.type)
 
+      if (this.options.selector) $.extend(self.options, this.$element.data())
       if (!self.options.delay || !self.options.delay.show) return self.show()
 
       clearTimeout(this.timeout)
@@ -100,6 +101,7 @@
       var self = $(e.currentTarget)[this.type](this._options).data(this.type)
 
       if (this.timeout) clearTimeout(this.timeout)
+      if (this.options.selector) $.extend(self.options, this.$element.data())
       if (!self.options.delay || !self.options.delay.hide) return self.hide()
 
       self.hoverState = 'out'
@@ -136,8 +138,8 @@
           .detach()
           .css({ top: 0, left: 0, display: 'block' })
 
-        container = this.options.container === '' ? '' : $( this.options.container )
-        container.length ? $tip.appendTo( container ) : $tip.insertAfter( this.$element )
+        container = this.options.container === '' ? '' : $(this.options.container)
+        container.length ? $tip.appendTo(container) : $tip.insertAfter(this.$element)
 
         pos = this.getPosition()
 
@@ -168,6 +170,18 @@
             break
           case 'top-right':
             tp = {top: pos.top, left: pos.left + pos.width}
+            break
+          case 'right-bottom':
+            tp = { top: pos.top + pos.height, left: pos.left }
+            break
+          case 'right-top':
+            tp = { top: pos.top - actualHeight, left: pos.left }
+            break
+          case 'left-bottom':
+            tp = { top: pos.top + pos.height, left: pos.right - actualWidth }
+            break
+          case 'left-top':
+            tp = { top: pos.top - actualHeight, left: pos.right - actualWidth }
             break
         }
 
@@ -213,7 +227,6 @@
       } else {
         this.replaceArrow(actualHeight - height, actualHeight, 'top')
       }
-
       if (replace) $tip.offset(offset)
     }
 
@@ -292,7 +305,12 @@
     }
 
   , tip: function () {
-      return this.$tip = this.$tip || $(this.options.template)
+      this.$tip = this.$tip || $(this.options.template)
+      if (this.options.cssClass) {
+        this.$tip.addClass(this.options.cssClass)
+      }
+
+      return this.$tip;
     }
 
   , arrow: function(){
