@@ -289,7 +289,7 @@
       return this.getTitle()
     }
 
-	/* 
+    /* 
     a common issue on IE9 and older versions 
     that .offset() does fail against disconnected DOM
     a suggested fix is to hide the error    
