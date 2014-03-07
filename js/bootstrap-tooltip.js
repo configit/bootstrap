@@ -289,12 +289,22 @@
       return this.getTitle()
     }
 
-  , getPosition: function () {
+	/* 
+    a common issue on IE9 and older versions 
+    that .offset() does fail against disconnected DOM
+    a suggested fix is to hide the error    
+    https://github.com/jquery/jquery/commit/cf672a2e7a886cac5ae62f6772c6b4b43b19a2fc
+    */
+  , getPosition: function() {
       var el = this.$element[0]
-      return $.extend({}, (typeof el.getBoundingClientRect == 'function') ? el.getBoundingClientRect() : {
-        width: el.offsetWidth
-      , height: el.offsetHeight
-      }, this.$element.offset())
+      var pos;
+      try {
+        if ( ( typeof el.getBoundingClientRect == 'function' ) ) {
+          pos = el.getBoundingClientRect()
+        }
+      }
+      catch ( e ) { }
+      return $.extend( {}, pos || { width: el.offsetWidth, height: el.offsetHeight }, this.$element.offset() )
     }
 
   , getTitle: function () {
