@@ -3,6 +3,8 @@
   "css_prefix_text": "icon-",
   "css_use_suffix": false,
   "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
   "glyphs": [
     {
       "uid": "381da2c2f7fd51f8de877c044d7f439d",
@@ -518,6 +520,18 @@
       "uid": "7222571caa5c15f83dcfd447c58d68d9",
       "css": "search",
       "code": 59392,
+      "src": "entypo"
+    },
+    {
+      "uid": "25b34dea4784f72c710454f32ff8fa2b",
+      "css": "star",
+      "code": 59423,
+      "src": "entypo"
+    },
+    {
+      "uid": "0e3f1335f83cca67329b2c4bcb3aaec5",
+      "css": "star-empty",
+      "code": 59424,
       "src": "entypo"
     },
     {
