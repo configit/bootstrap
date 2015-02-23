@@ -5787,7 +5787,7 @@ a.badge:focus {
 
 .label-important,
 .badge-important {
-  background-color: #555555;
+  background-color: #9d261d;
 }
 
 .label-important[href],
@@ -5807,22 +5807,22 @@ a.badge:focus {
 
 .label-success,
 .badge-success {
-  background-color: #555555;
+  background-color: #46a546;
 }
 
 .label-success[href],
 .badge-success[href] {
-  background-color: #3b3b3b;
+  background-color: #378137;
 }
 
 .label-info,
 .badge-info {
-  background-color: #555555;
+  background-color: #049cdb;
 }
 
 .label-info[href],
 .badge-info[href] {
-  background-color: #3b3b3b;
+  background-color: #0378a9;
 }
 
 .label-inverse,
