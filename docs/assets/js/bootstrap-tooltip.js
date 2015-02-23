@@ -289,12 +289,19 @@
       return this.getTitle()
     }
 
-  , getPosition: function () {
+  , getPosition: function() {
       var el = this.$element[0]
-      return $.extend({}, (typeof el.getBoundingClientRect == 'function') ? el.getBoundingClientRect() : {
-        width: el.offsetWidth
-      , height: el.offsetHeight
-      }, this.$element.offset())
+      var pos;
+
+      // .getBoundingClientRect() fails for disconnected DOM elements, apply same fix as jquery
+      // https://github.com/jquery/jquery/commit/cf672a2e7a886cac5ae62f6772c6b4b43b19a2fc
+      try {
+        if ( ( typeof el.getBoundingClientRect == 'function' ) ) {
+          pos = el.getBoundingClientRect()
+        }
+      }
+      catch ( e ) { }
+      return $.extend( {}, pos || { width: el.offsetWidth, height: el.offsetHeight }, this.$element.offset() )
     }
 
   , getTitle: function () {
