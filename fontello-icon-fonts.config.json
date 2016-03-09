@@ -731,6 +731,12 @@
       "css": "right-dir-1",
       "code": 59431,
       "src": "websymbols"
+    },
+    {
+      "uid": "d4816c0845aa43767213d45574b3b145",
+      "css": "history",
+      "code": 59439,
+      "src": "fontawesome"
     }
   ]
 }
