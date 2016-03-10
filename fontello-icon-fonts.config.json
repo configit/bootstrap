@@ -737,6 +737,12 @@
       "css": "history",
       "code": 59439,
       "src": "fontawesome"
+    },
+    {
+      "uid": "0d08dbb1dd648a43bdea81b7e6c9e036",
+      "css": "location",
+      "code": 59440,
+      "src": "fontawesome"
     }
   ]
 }
