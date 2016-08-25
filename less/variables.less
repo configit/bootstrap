@@ -20,14 +20,14 @@
 
 // Accent colors
 // -------------------------
-@blue:                  #049cdb;
-@blueDark:              #0064cd;
-@green:                 #46a546;
-@red:                   #9d261d;
-@yellow:                #ffc40d;
-@orange:                #f89406;
-@pink:                  #c3325f;
-@purple:                #7a43b6;
+@blue:                  #4093e6;
+@blueDark:              #3272b3;
+@green:                 #00be66;
+@red:                   #e95252;
+@yellow:                #ffd762;
+@orange:                #ffa366;
+@pink:                  #ee5b8a;
+@purple:                #c44ec9;
 
 
 // Scaffolding
@@ -38,7 +38,7 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+@linkColor:             #3272b3;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
@@ -88,19 +88,19 @@
 @btnBackgroundHighlight:            darken(@btnBackground, 2%);
 @btnBorder:                         #ddd;
 
-@btnPrimaryBackground:              @linkColor;
+@btnPrimaryBackground:              @blue;
 @btnPrimaryBackgroundHighlight:     darken(@btnPrimaryBackground, 2%);
 
-@btnInfoBackground:                 #2f96b4; //#5bc0de;
+@btnInfoBackground:                 @blueDark;
 @btnInfoBackgroundHighlight:        darken(@btnInfoBackground, 2%);
 
-@btnSuccessBackground:              #51a351; //#62c462;
+@btnSuccessBackground:              @green;
 @btnSuccessBackgroundHighlight:     darken(@btnSuccessBackground, 2%);
 
 @btnWarningBackground:              @orange;
 @btnWarningBackgroundHighlight:     darken(@btnWarningBackground, 2%);
 
-@btnDangerBackground:               #bd362f; //#ee5f5b;
+@btnDangerBackground:               @red;
 @btnDangerBackgroundHighlight:      darken(@btnDangerBackground, 2%);
 
 @btnInverseBackground:              @grayDarker; // #444
@@ -235,25 +235,21 @@
 
 // Form states and alerts
 // -------------------------
-@warningColor:            #c09853;
-@warningBackground:       #fcf8e3;
-@warningText:             #c09853;
-@warningBorder:           darken(spin(@warningBackground, -10), 3%);
+@warningBackground:       #fff4ec;
+@warningText:             #73492e;
+@warningBorder:           @orange;
 
-@errorColor:              #b94a48;
-@errorBackground:         #f2dede;
-@errorText:               #b94a48;
-@errorBorder:             darken(spin(@errorBackground, -10), 3%);
+@errorBackground:         #fceaea;
+@errorText:               #802d2d;
+@errorBorder:             @red;
 
-@successColor:            #468847;
-@successBackground:       #dff0d8;
-@successText:             #468847;
-@successBorder:           darken(spin(@successBackground, -10), 5%);
+@successBackground:       #e0f4eb;
+@successText:             #005930;
+@successBorder:           @green;
 
-@infoColor:               #3a87ad;
-@infoBackground:          #d9edf7;
-@infoText:                #3a87ad;
-@infoBorder:              darken(spin(@infoBackground, -10), 7%);
+@infoBackground:          #e9f4ff;
+@infoText:                #224d78;
+@infoBorder:              #48a2ff;
 
 // Labels and Badges
 // -------------------------
