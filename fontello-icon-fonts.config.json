@@ -805,6 +805,12 @@
       "search": [
         "features"
       ]
+    },
+    {
+      "uid": "44a0e2660ac966cdfaa04deb6aac51df",
+      "css": "shield",
+      "code": 61746,
+      "src": "fontawesome"
     }
   ]
 }
