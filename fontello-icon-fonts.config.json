@@ -817,6 +817,12 @@
       "css": "right-circled",
       "code": 61609,
       "src": "fontawesome"
+    },
+    {
+      "uid": "422e07e5afb80258a9c4ed1706498f8a",
+      "css": "circle-empty",
+      "code": 61708,
+      "src": "fontawesome"
     }
   ]
 }
