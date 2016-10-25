@@ -493,12 +493,6 @@
       "src": "fontawesome"
     },
     {
-      "uid": "f2aa28a2548ed3d2be718d087b65ee21",
-      "css": "key",
-      "code": 59422,
-      "src": "fontawesome"
-    },
-    {
       "uid": "4109c474ff99cad28fd5a2c38af2ec6f",
       "css": "filter",
       "code": 61616,
@@ -837,6 +831,12 @@
       "search": [
         "product-range"
       ]
+    },
+    {
+      "uid": "8beac4a5fd5bed9f82ca7a96cc8ba218",
+      "css": "key",
+      "code": 59422,
+      "src": "entypo"
     }
   ]
 }
