@@ -843,6 +843,12 @@
       "css": "chart-bar",
       "code": 59447,
       "src": "fontawesome"
+    },
+    {
+      "uid": "d7a614bd701f6712e8e3b2be124899e1",
+      "css": "flag-checkered",
+      "code": 61726,
+      "src": "fontawesome"
     }
   ]
 }
