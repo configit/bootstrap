@@ -25,10 +25,10 @@
   white-space: normal;
 
   // Offset the popover to account for the popover arrow
-  &.top, &.right-top, &.left-top { margin-top: -10px; }
-  &.right, &.bottom-right, &.top-right { margin-left: 10px; }
-  &.bottom, &.right-bottom, &.left-bottom { margin-top: 10px; }
-  &.left, &.bottom-left, &.top-left { margin-left: -10px; }
+  &.top, &.top-right, &.top-left { margin-top: -10px; }
+  &.right, &.right-bottom, &.right-top { margin-left: 10px; }
+  &.bottom, &.bottom-right, &.bottom-left { margin-top: 10px; }
+  &.left, &.left-bottom, &.left-top { margin-left: -10px; }
 }
 
 .popover-title {
@@ -72,7 +72,7 @@
 }
 
 .popover {
-  &.top .arrow, &.right-top .arrow, &.left-top .arrow {
+  &.top .arrow, &.top-right .arrow, &.top-left .arrow {
     left: 50%;
     margin-left: -@popoverArrowOuterWidth;
     border-bottom-width: 0;
@@ -86,7 +86,7 @@
       border-top-color: @popoverArrowColor;
     }
   }
-  &.right .arrow, &.bottom-right .arrow, &.top-right .arrow {
+  &.right .arrow, &.right-bottom .arrow, &.right-top .arrow {
     left: -@popoverArrowOuterWidth;
     margin-top: -@popoverArrowOuterWidth;
     border-left-width: 0;
@@ -99,7 +99,7 @@
       border-right-color: @popoverArrowColor;
     }
   }
-  &.bottom .arrow, &.right-bottom .arrow, &.left-bottom .arrow {
+  &.bottom .arrow, &.bottom-right .arrow, &.bottom-left .arrow {
     left: 50%;
     margin-left: -@popoverArrowOuterWidth;
     border-top-width: 0;
@@ -113,7 +113,7 @@
       border-bottom-color: @popoverArrowColor;
     }
   }
-  &.left .arrow, &.bottom-left .arrow, &.top-left .arrow{
+  &.left .arrow, &.left-bottom .arrow, &.left-top .arrow{
     right: -@popoverArrowOuterWidth;
     margin-top: -@popoverArrowOuterWidth;
     border-right-width: 0;
@@ -129,16 +129,16 @@
   &.left .arrow, &.right .arrow {
     top: 50%;
   }
-  &.bottom-right .arrow, &.bottom-left .arrow {
+  &.right-bottom .arrow, &.left-bottom .arrow {
     bottom: 4px;
   }
-  &.top-right .arrow, &.top-left .arrow {
+  &.right-top .arrow, &.left-top .arrow {
     top: 15px;
   }
-  &.right-bottom .arrow, &.right-top .arrow  {
+  &.bottom-right .arrow, &.top-right .arrow  {
     left: 15px;
   }
-  &.left-bottom .arrow, &.left-top .arrow  {
+  &.bottom-left .arrow, &.top-left .arrow  {
     left: auto;
     right: 4px;
   }
