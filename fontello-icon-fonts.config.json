@@ -199,12 +199,6 @@
       "src": "fontawesome"
     },
     {
-      "uid": "c95735c17a10af81448c7fed98a04546",
-      "css": "folder-open",
-      "code": 62658,
-      "src": "fontawesome"
-    },
-    {
       "uid": "e99461abfef3923546da8d745372c995",
       "css": "cog",
       "code": 9881,
@@ -619,12 +613,6 @@
       "src": "entypo"
     },
     {
-      "uid": "0ccb084ddeeae372673793ed0b45bb4a",
-      "css": "folder-alt",
-      "code": 59426,
-      "src": "entypo"
-    },
-    {
       "uid": "96ea1be71f597a5bdfc8f791ada4f651",
       "css": "archive",
       "code": 59425,
@@ -852,7 +840,7 @@
     },
     {
       "uid": "a89ab911d6a59873d8f523b8a498c8b8",
-      "css": "product-range-groups",
+      "css": "folder",
       "code": 59450,
       "src": "custom_icons",
       "selected": true,
@@ -861,7 +849,7 @@
         "width": 1000
       },
       "search": [
-        "product-range-groups"
+        "folder"
       ]
     },
     {
@@ -908,7 +896,7 @@
     },
     {
       "uid": "73b7ae42fa4fdd146d73f57c3a62b428",
-      "css": "folder-open2",
+      "css": "folder-open",
       "code": 59452,
       "src": "custom_icons",
       "selected": true,
@@ -919,6 +907,12 @@
       "search": [
         "folder-open"
       ]
+    },
+    {
+      "uid": "0ccb084ddeeae372673793ed0b45bb4a",
+      "css": "folder-alt",
+      "code": 59426,
+      "src": "entypo"
     }
   ]
 }
