@@ -913,6 +913,12 @@
       "css": "folder-alt",
       "code": 59426,
       "src": "entypo"
+    },
+    {
+      "uid": "3a7b6876c1817ce3b801b86c04a9d0af",
+      "css": "sort-number-up",
+      "code": 61794,
+      "src": "fontawesome"
     }
   ]
 }
