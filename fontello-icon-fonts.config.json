@@ -961,6 +961,12 @@
       "css": "star-empty",
       "code": 59424,
       "src": "fontawesome"
+    },
+    {
+      "uid": "5717236f6134afe2d2a278a5c9b3927a",
+      "css": "play-circled",
+      "code": 61764,
+      "src": "fontawesome"
     }
   ]
 }
