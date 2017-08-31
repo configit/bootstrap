@@ -967,6 +967,12 @@
       "css": "play-circled",
       "code": 61764,
       "src": "fontawesome"
+    },
+    {
+      "uid": "d84a06c5ce6da9ebdc9b0a5cb94db4c4",
+      "css": "heartbeat",
+      "code": 61982,
+      "src": "fontawesome"
     }
   ]
 }
