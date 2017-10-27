@@ -987,6 +987,12 @@
       "search": [
         "filter-outline"
       ]
+    },
+    {
+      "uid": "5f0f183e241d15cbe486bff88b188dff",
+      "css": "puzzle",
+      "code": 61742,
+      "src": "fontawesome"
     }
   ]
 }
