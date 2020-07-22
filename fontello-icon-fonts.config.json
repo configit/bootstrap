@@ -1205,6 +1205,12 @@
       ]
     },
     {
+      "uid": "53dd31a6cc6438192b2d7b09b1c1dd45",
+      "css": "columns",
+      "code": 61659,
+      "src": "fontawesome"
+    },
+    {
       "uid": "adbd0b781c52761cc14c26b9571a1186",
       "css": "currencies",
       "code": 59457,
